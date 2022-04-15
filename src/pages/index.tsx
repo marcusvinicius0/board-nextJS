@@ -8,11 +8,20 @@ export default function Home() {
       <Head>
         <title>Board - Organizando suas tarefas</title>
       </Head>
-      <div>
-        <h1 className={styles.title}>
-          learning <span>next.js, typescript and sass</span> with matheus fraga
-        </h1>
-      </div>
+
+      <main className={styles.contentContainer}>
+        <img src="/images/board-user.svg" alt="" />
+        <section className={styles.callToAction}>
+          <h1>Uma ferramente para seu dia a dia. Escreva, planeje e organize-se..</h1>
+          <p>
+            <span>100% Gratuita</span> e online.
+          </p>
+        </section>
+
+        <div className={styles.donaters}>
+          <img src="https://sujeitoprogramador.com/steve.png" alt="apoiador-1" />
+        </div>
+      </main>
     </>
   )
 }
